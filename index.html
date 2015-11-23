@@ -22,8 +22,14 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1>Photofest</h1>
-        <p>{{test}}</p>
+        <h3>search #tags</h3>
+        <form class="form-inline">
+          <div class="form-group">
+            <input type="text" ng-model="tag" class="form-controll" placeholder="type any #tags">
+          </div>
+          <input type="submit" value="search" class="btn btn-danger">
+        </form>
+        <p>{{tag}}</p>
       </div>
     </div>
   </div>
